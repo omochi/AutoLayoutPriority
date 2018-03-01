@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayouyPriority" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-ch-HBe">
+                                <rect key="frame" x="16" y="40" width="300" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="longView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="pqN-Hh-0bH"/>
+                                    <constraint firstAttribute="height" constant="40" id="s6M-WU-Sje"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jq3-lB-vuZ">
+                                <rect key="frame" x="16" y="100" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="shortView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5jl-FQ-KSF"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ztm-Fm-BQf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUw-dT-Lgg">
+                                <rect key="frame" x="16" y="160" width="300" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.60692658249999998" blue="0.59678394469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="theView"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" placeholder="YES" id="HGG-Gc-Jt4"/>
+                                    <constraint firstAttribute="height" constant="40" id="XRi-sg-oau"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jq3-lB-vuZ" firstAttribute="top" secondItem="4Hd-ch-HBe" secondAttribute="bottom" constant="20" id="4Qs-vg-6MQ"/>
+                            <constraint firstItem="jq3-lB-vuZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="80I-8e-4xS"/>
+                            <constraint firstItem="HUw-dT-Lgg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KdZ-Su-NWY"/>
+                            <constraint firstItem="HUw-dT-Lgg" firstAttribute="top" secondItem="jq3-lB-vuZ" secondAttribute="bottom" constant="20" id="MAh-aM-Qu7"/>
+                            <constraint firstItem="4Hd-ch-HBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qUp-tZ-wsJ"/>
+                            <constraint firstItem="4Hd-ch-HBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vTc-qk-E7l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="longView" destination="4Hd-ch-HBe" id="tWc-ho-yUh"/>
+                        <outlet property="shortView" destination="jq3-lB-vuZ" id="fkw-7m-aD5"/>
+                        <outlet property="theView" destination="HUw-dT-Lgg" id="wdD-rc-phs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
